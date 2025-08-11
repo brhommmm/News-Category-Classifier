@@ -114,7 +114,7 @@ test_path = r"YOUR_LOCAL_PATH_TO_test.csv"
 
 ---
 
-## Results
+# Results
 
 The models produced the following outputs and metrics:
 
@@ -124,7 +124,7 @@ The models produced the following outputs and metrics:
 
 2. **Logistic Regression Accuracy**
 
-_Accuracy and classification report printed in console._
+![Logistic Regression Accuracy](images/Logistic_Regretion_Acuracy.png)
 
 3. **Logistic Regression Confusion Matrix**
 
@@ -132,7 +132,7 @@ _Accuracy and classification report printed in console._
 
 4. **Neural Network Accuracy Over Epochs**
 
-_Plots showing training and validation accuracy._
+![Neural Network Accuracy Over Epochs](images/NN_Acuracy_With_Epochs.png)
 
 5. **Neural Network Training History**
 
