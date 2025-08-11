@@ -162,10 +162,10 @@ The models produced the following outputs and metrics:
 
 ## Visualizations
 
-- Bar plot for class distribution (`images/class_distribution.png`).
-- Word clouds for each category (`images/wordcloud_<category>.png`).
-- Confusion matrix heatmap for Logistic Regression (`images/logreg_confusion_matrix.png`).
-- Neural network training accuracy and loss over epochs (`images/nn_training_history.png`).
+- Bar plot for class distribution (`class_distribution.png`).
+- Word clouds for each category (`wordcloud_<category>.png`).
+- Confusion matrix heatmap for Logistic Regression (`logreg_confusion_matrix.png`).
+- Neural network training accuracy and loss over epochs (`nn_training_history.png`).
 
 All visualizations are saved automatically when you run the script.
 
