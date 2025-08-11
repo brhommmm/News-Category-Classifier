@@ -120,7 +120,7 @@ The models produced the following outputs and metrics:
 
 1. **Class Distribution**
 
-![Class Distribution](class_distribution.png)
+![Class Distribution](images/class_distribution.png)
 
 2. **Logistic Regression Accuracy**
 
@@ -128,7 +128,7 @@ _Accuracy and classification report printed in console._
 
 3. **Logistic Regression Confusion Matrix**
 
-![Logistic Regression Confusion Matrix](logreg_confusion_matrix.png)
+![Logistic Regression Confusion Matrix](images/logreg_confusion_matrix.png)
 
 4. **Neural Network Accuracy Over Epochs**
 
@@ -136,7 +136,7 @@ _Plots showing training and validation accuracy._
 
 5. **Neural Network Training History**
 
-![Neural Network Training History](nn_training_history.png)
+![Neural Network Training History](images/nn_training_history.png)
 
 6. **Successful Predictions**
 
@@ -144,28 +144,28 @@ _A sample of correctly predicted news categories (add your own examples here)._
 
 7. **Word Cloud - Business**
 
-![Word Cloud Business](wordcloud_Business.png)
+![Word Cloud Business](images/wordcloud_Business.png)
 
 8. **Word Cloud - Sci/Tech**
 
-![Word Cloud Sci/Tech](wordcloud_Sci_Tech.png)
+![Word Cloud Sci/Tech](images/wordcloud_Sci_Tech.png)
 
 9. **Word Cloud - Sports**
 
-![Word Cloud Sports](wordcloud_Sports.png)
+![Word Cloud Sports](images/wordcloud_Sports.png)
 
 10. **Word Cloud - World**
 
-![Word Cloud World](wordcloud_World.png)
+![Word Cloud World](images/wordcloud_World.png)
 
 ---
 
 ## Visualizations
 
-- Bar plot for class distribution (`class_distribution.png`).
-- Word clouds for each category (`wordcloud_<category>.png`).
-- Confusion matrix heatmap for Logistic Regression (`logreg_confusion_matrix.png`).
-- Neural network training accuracy and loss over epochs (`nn_training_history.png`).
+- Bar plot for class distribution (`images/class_distribution.png`).
+- Word clouds for each category (`images/wordcloud_<category>.png`).
+- Confusion matrix heatmap for Logistic Regression (`images/logreg_confusion_matrix.png`).
+- Neural network training accuracy and loss over epochs (`images/nn_training_history.png`).
 
 All visualizations are saved automatically when you run the script.
 
