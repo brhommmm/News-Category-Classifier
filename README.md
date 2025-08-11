@@ -140,7 +140,7 @@ The models produced the following outputs and metrics:
 
 6. **Successful Predictions**
 
-_A sample of correctly predicted news categories (add your own examples here)._
+![A sample of correctly predicted news](images/Successfull_Predection.png)
 
 7. **Word Cloud - Business**
 
